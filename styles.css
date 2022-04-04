@@ -3,6 +3,9 @@ body{
     background-color: hsl(225, 100%, 94%) ;   
     max-width: 500px;
     margin: auto;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 .container{
@@ -23,24 +26,51 @@ body{
 }
 
 .order{
+    border: solid green;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+}
+.order h1{
+    margin: 0px;
+    padding-top: 20px;
 }
 
+
+/* //////////////////////////////////////////////// */
 .price{
     /* border: solid green; */
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    width: 400px;
     height: 70px;
-    background-color: hsl(0, 0%, 93%);
+    background-color: hsl(0, 12%, 93%);
 }
 
 .price span{
     padding-right: 60px;
-    padding-left: 10px;
+    padding-left: 20px;
+}
+
+.price button{
+    border: none;
+}
+.price button:hover{
+    color: blueviolet;
+}
+
+/* //////////////////////////////////// */
+.payment{
+    border: solid red;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.cancel{
+    padding-top: 20px;
 }
